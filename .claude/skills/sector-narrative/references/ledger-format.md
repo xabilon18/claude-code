@@ -1,6 +1,6 @@
 # Story Ledger format
 
-The ledger is one Markdown document with these sections, in this order. Match the existing ledger's structure exactly, so the read-back check and future runs can parse it.
+There are two ledgers with identical structure: Ledger A (`Story Ledger — CURRENT`) and Ledger B (`Story Ledger B — CURRENT`). Each is one Markdown document with these sections, in this order. Match the existing ledger's structure exactly, so the read-back check and future runs can parse it.
 
 ## Header
 
@@ -31,6 +31,11 @@ ID prefixes:
 - `SEMI-` semiconductors
 - `AI-` AI & data-center infrastructure
 - `ENRG-` energy
+- `BANK-` banks (Ledger B)
+- `CRYP-` crypto (Ledger B)
+- `HLTH-` healthcare (Ledger B)
+
+POL-, SEMI-, AI- and ENRG- stories live in Ledger A. A Ledger B story may cite a Ledger A ID ("AI-02 in Ledger A").
 
 IDs are permanent. Never reuse one.
 
@@ -53,7 +58,7 @@ One block per story:
 
 ## §4 Prediction register
 
-Table columns: `ID | Made | Prediction | Story | Check by | Status`.
+Table columns: `ID | Made | Prediction | Story | Check by | Status`. Prediction IDs are P-001… in Ledger A and P-101… in Ledger B.
 - Status values: `Open`, `Hit`, `Miss`, `Partial`, `Void`. Add a one-line evidence note when graded.
 - Keep graded rows for 6 months, then move them to a one-line tally under the table.
 - The tally line reads like this: `Hit rate (graded): x/y`.

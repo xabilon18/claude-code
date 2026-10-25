@@ -1,18 +1,18 @@
 ---
 name: sector-narrative
-description: Track the big stories in semiconductors, AI/data-center infrastructure and energy (plus the political and policy announcements that move them), keep a persistent Story Ledger in Google Drive so no big story is ever forgotten, and write a weekly light scan or a monthly narrative report that names the companies that benefit or get hurt and what could come next. Use when asked for the weekly sector scan, the monthly sector narrative, to update the story ledger, or to rebuild the baseline.
+description: Track the big stories in semiconductors, AI/data-center infrastructure, energy, banks, crypto and healthcare (plus the political and policy announcements that move them), keep persistent Story Ledgers in Google Drive so no big story is ever forgotten, and write a weekly light scan or monthly per-sector narrative reports that name the companies that benefit or get hurt and what could come next. Use when asked for the weekly sector scan, the monthly sector narrative, to update the story ledger, or to rebuild the baseline.
 ---
 
 # Sector Narrative
 
-The goal is a narrative that remembers. Every run starts from the **Story Ledger** in Google Drive, adds what changed, and saves a new version. Monthly reports open from last month's report and grade last month's predictions.
+The goal is a narrative that remembers. Every run starts from the two **Story Ledgers** in Google Drive (A: Semis, AI infrastructure, Energy, cross-cutting policy; B: Banks, Crypto, Healthcare), adds what changed, and saves a new version. Monthly reports open from last month's report and grade last month's predictions.
 
 ## Modes
 
 | Invocation | What it does | Output |
 |---|---|---|
 | `weekly` | Scans the past 7 days, updates the ledger, and writes a short per-sector note on what changed and why it matters | `Weekly Scan — YYYY-Www` doc + new ledger version |
-| `monthly` | One narrative report per sector (Energy, Semiconductors, AI Infrastructure), each continuing that sector's previous report | Three `<Sector> Narrative — YYYY-MM` docs + new ledger version |
+| `monthly` | One narrative report per sector (Energy, Semiconductors, AI Infrastructure, Banks, Crypto, Healthcare), each continuing that sector's previous report | Six `<Sector> Narrative — YYYY-MM` docs + new versions of both ledgers |
 | `sector <name>` | An on-demand narrative for one sector only, in the monthly format | A reply in chat (offer to save it as a doc) |
 | `baseline` | Rebuilds the ledger from scratch over a stated window (default: since 2025-01-20). Only when the user asks, because it replaces the narrative thread | Baseline report + ledger v1 of a new series |
 | `story <ID or topic>` | Deep-dive on one story, ad hoc | Reply in chat (and a ledger update if facts changed) |
@@ -32,7 +32,7 @@ If no mode is given, ask which mode. A scheduled run always names its mode.
 
 ## Non-negotiable rules
 
-1. **Read memory first.** Read the current ledger before any research. For `monthly`, also read the latest monthly report and every weekly scan since it. Never write a report from a blank slate unless the mode is `baseline`.
+1. **Read memory first.** Read both current ledgers before any research. For `monthly`, also read the latest monthly report and every weekly scan since it. Never write a report from a blank slate unless the mode is `baseline`.
 2. **Never drop a story.** Stories change status: Emerging → Active → Escalating/Maturing → Dormant-watch → Resolved → Archive. A story with no news for 60+ days becomes Dormant-watch. It is not deleted. Every story in the index appears in every monthly report, at least as one line.
 3. **Every story carries its politics.** Each update names the policy lever involved: executive orders, tariffs (Section 232/122/301), export controls (BIS), sanctions (OFAC), Fed, FERC/NRC/EPA, Congress, state legislatures, foreign governments. Political announcements are first-class developments, not background.
 4. **Name companies with a mechanism.** Every company mention gives its ticker, its order (1st/2nd/3rd), *why* the story moves its economics, and *what would break the thesis*. No ticker lists without reasons.
@@ -47,7 +47,7 @@ If no mode is given, ask which mode. A scheduled run always names its mode.
 
 ## Workflow (weekly and monthly)
 
-1. **Load memory.** Follow `references/drive-memory.md`: find and read `Story Ledger — CURRENT`. If its title shows `(pending)`, another run is mid-write: stop and report. For `monthly`, also load the last monthly report and all weekly scans since.
+1. **Load memory.** Follow `references/drive-memory.md`: find and read `Story Ledger — CURRENT` (A) and `Story Ledger B — CURRENT` (B). If either title shows `(pending)`, another run is mid-write: stop and report. For `monthly`, also load the last monthly report and all weekly scans since.
 2. **Plan the research.** Build the query list from `references/research-playbook.md`:
    - every Active/Escalating story's signposts;
    - the catalyst calendar for the window;
@@ -59,7 +59,7 @@ If no mode is given, ask which mode. A scheduled run always names its mode.
    - Weekly: about 12–20 searches.
    - Monthly: about 25–40 searches.
    - Prefer primary sources (filings, agency releases, Federal Register, company IR). Record the date of every fact.
-4. **Update the ledger** (format in `references/ledger-format.md`):
+4. **Update both ledgers** (format in `references/ledger-format.md`; each story lives in the ledger that owns its sector):
    - append dated events to existing stories;
    - change status and importance where warranted;
    - add new stories when they meet the "big story" test below, or add them to Candidates;
@@ -86,12 +86,15 @@ Core sectors:
 - **Semiconductors:** compute, memory, foundry, equipment, materials.
 - **AI & data-center infrastructure:** hyperscalers, neoclouds, AI labs and their financing, power and cooling, networking, data-center real estate, AI's disruption of software.
 - **Energy:** oil and gas, refining, LNG, power/utilities/IPPs, nuclear and fuel cycle, renewables and storage, grid equipment.
+- **Banks:** large and regional banks, capital rules and supervision, bank M&A, private credit exposure, deposits vs stablecoins.
+- **Crypto:** bitcoin and ETF flows, crypto legislation and regulators, treasury companies, miners (including their AI pivot), exchanges and stablecoin issuers.
+- **Healthcare:** drug pricing and pharma tariffs, obesity drugs, pharma M&A and patent cliffs, insurers (Medicare Advantage, ACA), hospitals and Medicaid, the FDA, China biotech rules.
 - **Cross-cutting policy:** tariffs, export controls, sanctions, Fed/rates, US–China, elections, state energy/data-center law.
 
 The company universe and source list are in `references/research-playbook.md`. Expand coverage only if the user asks; depth beats breadth.
 
 ## Ledger hygiene
 
-- Keep the ledger under ~80 KB so a single read returns it whole.
+- Keep each ledger under ~80 KB so a single read returns it whole.
 - When it grows past that, compress each Resolved story to one line in §7 Archive (what happened, what we learned) and trim old event bullets to the 5 most important.
 - The full history survives in `Ledger History`.

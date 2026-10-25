@@ -1,6 +1,6 @@
 # Weekly scan template
 
-One short doc per week, titled `Weekly Scan — YYYY-Www (MM-DD → MM-DD)`. It has one section per sector (Energy, Semiconductors, AI Infrastructure) and runs to about 300–600 words in total.
+One short doc per week, titled `Weekly Scan — YYYY-Www (MM-DD → MM-DD)`. It has one section per sector (Energy, Semiconductors, AI Infrastructure, Banks, Crypto, Healthcare) and runs to about 500–900 words in total.
 
 The weekly's main job is to keep the ledger current. The doc the user reads only says what changed and why it matters.
 
@@ -15,6 +15,15 @@ The weekly's main job is to keep the ledger current. The doc the user reads only
 (same)
 
 ## AI Infrastructure
+(same)
+
+## Banks
+(same)
+
+## Crypto
+(same)
+
+## Healthcare
 (same)
 
 ## Watch next week

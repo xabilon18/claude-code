@@ -19,6 +19,9 @@ Run each sweep every time.
    - "oil gas LNG energy markets news {period}"
    - "power utilities electricity grid news {period}"
    - "nuclear energy news {period}"
+   - "US banks news {period}" and "private credit news {period}"
+   - "bitcoin crypto market news {period}" and "bitcoin ETF flows {period}"
+   - "pharma biotech news {period}" and "health insurers hospitals news {period}"
 2. **Policy sweeps:**
    - "White House executive order {period} energy OR semiconductors OR AI"
    - "Commerce BIS export controls {period}"
@@ -29,11 +32,14 @@ Run each sweep every time.
    - "Federal Reserve {period} decision OR minutes OR speech"
    - "state legislature data center {period}"
    - "China MOFCOM export control {period}"
+   - "OCC FDIC Fed bank rule {period}" (capital, supervision, GENIUS Act rules)
+   - "SEC CFTC crypto {period}" and "CLARITY Act {period}"
+   - "CMS rule {period}", "FDA approval {period}", "drug pricing deal White House {period}"
 3. **Story signposts:** for each Active/Escalating story, one search built from its Confirm/Break signposts.
 4. **Catalyst calendar:** results of every event dated within the window.
 5. **Predictions due:** one targeted search per prediction whose check-by date falls in the window.
 6. **Deals and capital markets.** Big M&A, IPOs and mega-financings reshape sectors, and thematic searches miss them. The baseline missed NextEra–Dominion and the SpaceX IPO this way.
-   - "largest acquisitions {sector} {period}" for semiconductors, AI, utilities/power and oil & gas
+   - "largest acquisitions {sector} {period}" for semiconductors, AI, utilities/power, oil & gas, banks, biopharma and crypto
    - "biggest IPO {period}"
    - "{sector} merger announced {period}"
    - "private credit data center financing {period}"
@@ -53,6 +59,9 @@ Run each sweep every time.
 | Nuclear | NRC, DOE Office of Nuclear Energy |
 | Companies | SEC EDGAR (8-K, 10-Q, 10-K), company IR earnings releases and transcripts |
 | China | MOFCOM announcements (via reputable wires) |
+| Banks | federalreserve.gov, OCC and FDIC press releases, bank earnings releases, FDIC Quarterly Banking Profile |
+| Crypto | SEC and CFTC releases, Congress.gov (CLARITY), ETF flow trackers (Farside, issuer sites), company 8-Ks |
+| Healthcare | CMS, FDA, HHS and White House fact sheets, KFF, company earnings releases |
 
 ## Company universe (starting set; extend as stories require)
 
@@ -99,5 +108,22 @@ Run each sweep every time.
 **Renewables and storage:** First Solar (FSLR), Enphase (ENPH), Sunrun (RUN), Fluence (FLNC), Tesla (TSLA), Ørsted (ORSTED.CO)
 
 **Software exposed to AI disruption:** Salesforce (CRM), ServiceNow (NOW), Intuit (INTU), Adobe (ADBE), Thomson Reuters (TRI)
+
+**Banks:**
+- Big banks: JPMorgan (JPM), Bank of America (BAC), Citi (C), Wells Fargo (WFC), Goldman Sachs (GS), Morgan Stanley (MS)
+- Regionals: PNC, Fifth Third (FITB), Huntington (HBAN), KeyCorp (KEY), Zions (ZION), Capital One (COF), Synchrony (SYF)
+- Private credit and alternatives: Blue Owl (OWL), Apollo (APO), Blackstone (BX), Ares (ARES), Jefferies (JEF)
+
+**Crypto:**
+- Exchanges and issuers: Coinbase (COIN), Robinhood (HOOD), Circle (CRCL), CME (CME), BlackRock (BLK)
+- Treasury companies: Strategy (MSTR)
+- Miners and hosts: IREN, Hut 8 (HUT), Cipher (CIFR), TeraWulf (WULF), Core Scientific (CORZ), MARA (MARA), Riot (RIOT)
+
+**Healthcare:**
+- Pharma: Eli Lilly (LLY), Novo Nordisk (NVO), Pfizer (PFE), Merck (MRK), AbbVie (ABBV), Bristol Myers (BMY), J&J (JNJ), AstraZeneca (AZN), GSK, Vertex (VRTX), Gilead (GILD)
+- Insurers: UnitedHealth (UNH), Humana (HUM), CVS (CVS), Elevance (ELV), Cigna (CI), Centene (CNC), Molina (MOH), Oscar (OSCR)
+- Hospitals: HCA, Tenet (THC), Community Health (CYH)
+- Tools and manufacturing: Thermo Fisher (TMO), Lonza (LONN.SW), Samsung Biologics (207940.KS)
+- Cash-pay channels: Hims & Hers (HIMS)
 
 Verify a ticker before first use in a report if it hasn't appeared before; companies get renamed and merged.
