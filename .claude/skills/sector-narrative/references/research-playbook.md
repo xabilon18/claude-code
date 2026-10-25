@@ -26,6 +26,7 @@ Run each sweep every time.
    - "Tesla robotaxi Optimus news {period}" and "US EV sales automakers tariffs {period}"
    - "airlines jet fuel guidance {period}", "Boeing deliveries production rate {period}", "railroad merger STB {period}"
    - "ISM manufacturing reshoring {period}" and "Caterpillar Deere outlook {period}"
+   - "rare earth magnets MP Materials news {period}"
 2. **Policy sweeps:**
    - "White House executive order {period} energy OR semiconductors OR AI"
    - "Commerce BIS export controls {period}"
@@ -138,7 +139,7 @@ Run each sweep every time.
 - Aerospace: Boeing (BA), GE Aerospace (GE), Howmet (HWM)
 - Space: SpaceX (SPCX), Viasat (VSAT), EchoStar (SATS)
 - Autos, EVs & robotics: Tesla (TSLA), GM, Ford (F), Toyota (TM), Rivian (RIVN), Lucid (LCID), Aptiv (APTV), BorgWarner (BWA)
-- Machinery & materials: Caterpillar (CAT), Deere (DE), Nucor (NUE), Steel Dynamics (STLD)
+- Machinery & materials: Caterpillar (CAT), Deere (DE), Nucor (NUE), Steel Dynamics (STLD), MP Materials (MP; rare-earth magnets for defense, EVs and robots, also tracked under Semis materials)
 - Transport: Union Pacific (UNP), Norfolk Southern (NSC), CSX; Delta (DAL), United (UAL), American (AAL), Southwest (LUV), JetBlue (JBLU)
 
 Verify a ticker before first use in a report if it hasn't appeared before; companies get renamed and merged.
