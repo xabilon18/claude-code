@@ -10,6 +10,14 @@ All memory lives in the user's Google Drive (Google Drive connector, `mcp__Googl
 | `Ledger History` folder | `1DWYo9Pf80nEsQlG73ELfZK85hgXAr5ug` |
 | Ledger v1 (2026-10-25, archived in Ledger History) | `1ID7M6JzgD-aAX2s6eiOGvfZ-oFfv4ds6ryIexmUx4PA` |
 | Baseline report (2026-10) | `15CPr8iMFubeNEvUP3jvz0LhV8DNPfHsvyHxPTg6V6YI` |
+| `Skill Instructions — sector-narrative` (copy of this skill for scheduled tasks) | `1hIRONjsTkgd2s6p4E63BLzJnVYOuZOCar7KURTWgQPE` |
+
+The scheduled tasks run without the repository, so they read the skill from the `Skill Instructions` doc. Whenever any file in this skill changes, regenerate that doc and re-upload it:
+- concatenate `SKILL.md` (without its frontmatter) and each `references/*.md`, each under a `**FILE: <path>**` line;
+- create the new doc, check it reads back whole, then trash the old one;
+- update the ID in the row above.
+
+Write placeholders as `{period}`, not `<period>`. Docs import deletes unknown `<tags>`.
 
 The ledger's file ID changes with every version. Always **find it by title**; never hard-code the latest ID.
 

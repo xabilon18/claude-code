@@ -14,29 +14,29 @@
 Run each sweep every time.
 
 1. **Broad sector sweeps** (catch what the ledger doesn't know):
-   - "semiconductor industry news <period>"
-   - "AI data center infrastructure news <period>"
-   - "oil gas LNG energy markets news <period>"
-   - "power utilities electricity grid news <period>"
-   - "nuclear energy news <period>"
+   - "semiconductor industry news {period}"
+   - "AI data center infrastructure news {period}"
+   - "oil gas LNG energy markets news {period}"
+   - "power utilities electricity grid news {period}"
+   - "nuclear energy news {period}"
 2. **Policy sweeps:**
-   - "White House executive order <period> energy OR semiconductors OR AI"
-   - "Commerce BIS export controls <period>"
-   - "Section 232 tariff proclamation <period>"
-   - "OFAC sanctions oil <period>"
-   - "FERC order <period> large load OR data center"
-   - "NRC approval <period>"
-   - "Federal Reserve <period> decision OR minutes OR speech"
-   - "state legislature data center <period>"
-   - "China MOFCOM export control <period>"
+   - "White House executive order {period} energy OR semiconductors OR AI"
+   - "Commerce BIS export controls {period}"
+   - "Section 232 tariff proclamation {period}"
+   - "OFAC sanctions oil {period}"
+   - "FERC order {period} large load OR data center"
+   - "NRC approval {period}"
+   - "Federal Reserve {period} decision OR minutes OR speech"
+   - "state legislature data center {period}"
+   - "China MOFCOM export control {period}"
 3. **Story signposts:** for each Active/Escalating story, one search built from its Confirm/Break signposts.
 4. **Catalyst calendar:** results of every event dated within the window.
 5. **Predictions due:** one targeted search per prediction whose check-by date falls in the window.
 6. **Deals and capital markets.** Big M&A, IPOs and mega-financings reshape sectors, and thematic searches miss them. The baseline missed NextEra–Dominion and the SpaceX IPO this way.
-   - "largest acquisitions <sector> <period>" for semiconductors, AI, utilities/power and oil & gas
-   - "biggest IPO <period>"
-   - "<sector> merger announced <period>"
-   - "private credit data center financing <period>"
+   - "largest acquisitions {sector} {period}" for semiconductors, AI, utilities/power and oil & gas
+   - "biggest IPO {period}"
+   - "{sector} merger announced {period}"
+   - "private credit data center financing {period}"
    - Then check the status of every deal already in the ledger (votes, regulatory orders, closings).
 
 ## Primary sources (prefer these)
