@@ -11,12 +11,24 @@ The goal is a narrative that remembers. Every run starts from the **Story Ledger
 
 | Invocation | What it does | Output |
 |---|---|---|
-| `weekly` | Scans the past 7 days, maps developments to ledger stories, records policy announcements, flags new candidate stories, ticks signposts | `Weekly Scan — YYYY-Www` doc + new ledger version |
-| `monthly` | Full narrative: continues last month's thread, grades predictions, updates every story, scenarios, company map, new predictions | `Sector Narrative — YYYY-MM` doc + new ledger version |
+| `weekly` | Scans the past 7 days, updates the ledger, and writes a short per-sector note on what changed and why it matters | `Weekly Scan — YYYY-Www` doc + new ledger version |
+| `monthly` | One narrative report per sector (Energy, Semiconductors, AI Infrastructure), each continuing that sector's previous report | Three `<Sector> Narrative — YYYY-MM` docs + new ledger version |
+| `sector <name>` | An on-demand narrative for one sector only, in the monthly format | A reply in chat (offer to save it as a doc) |
 | `baseline` | Rebuilds the ledger from scratch over a stated window (default: since 2025-01-20). Only when the user asks, because it replaces the narrative thread | Baseline report + ledger v1 of a new series |
 | `story <ID or topic>` | Deep-dive on one story, ad hoc | Reply in chat (and a ledger update if facts changed) |
 
 If no mode is given, ask which mode. A scheduled run always names its mode.
+
+## What the user reads vs. what the skill remembers
+
+- **The ledger is internal memory.** It is dense on purpose: dated events, tags, signposts, sources.
+- **Reports are for the user** and follow `references/monthly-report.md`:
+  - narrative prose, one sector per doc;
+  - named winners and losers, with reasons;
+  - what comes next.
+  - No macro section, no tags, no timelines.
+- **Answer only the sector asked about.** If the user asks about energy, answer about energy.
+- **The test of a report:** could the user have got it by reading headlines? If yes, it isn't done. The value is the interpretation, the second-order names, continuity across months, and graded calls.
 
 ## Non-negotiable rules
 

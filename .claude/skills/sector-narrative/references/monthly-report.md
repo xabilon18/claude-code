@@ -1,60 +1,49 @@
 # Monthly report template
 
-Title: `Sector Narrative — YYYY-MM`. Length: roughly 2,500–4,000 words. It must read as the next chapter of last month's report, not a fresh summary.
+One doc **per sector**, titled `Energy Narrative — YYYY-MM`, `Semiconductor Narrative — YYYY-MM` and `AI Infrastructure Narrative — YYYY-MM`. Each is about 1,000–1,800 words of prose, and each continues that sector's previous report.
+
+## What the reader wants
+
+The user can read the news themselves. They want the interpretation:
+- what the big stories mean for the industry;
+- who benefits and who gets hurt, named, with the reason;
+- what could come next.
+
+Write it like a sharp analyst's letter, not a news digest.
+
+## Hard rules
+
+- **Narrative prose.** Paragraphs that argue, not bullet lists of events. A fact earns a place only if it moves the argument. Compress the news to a clause and spend the words on "so what".
+- **This sector only.** Mention another sector only where it directly changes this sector's economics, in a sentence, with no detour.
+- **No standalone macro section.** Mention CPI, rates or the Fed only as the cause of a specific move ("higher borrowing costs halved the SMR names"), and never as data for its own sake.
+- **No [V]/[B]/[map] tags, story IDs or dated timelines in the report.** Those live in the ledger. Put sources as a short list at the end.
+- **Named companies, with a mechanism and what would break the thesis.** Prefer the second- and third-order names the obvious coverage misses.
+- **Continuity.** Open from last month's argument, say what played out, and grade last month's calls plainly.
+
+## Structure
 
 ```
-# Sector Narrative — YYYY-MM
-**Period:** <last report date> → <today> · **Ledger:** vN (x stories, y open predictions) · **Previous report:** <title + link>
-> Hypotheses and narrative, not advice. [V] verified this run · [B] background knowledge.
+# Energy Narrative — YYYY-MM
 
-## 1. Where we left off
-Quote last month's master thesis in one line, and its three biggest open questions.
-Answer each question in 1–2 sentences, with evidence.
+## Last month we said...
+2–4 sentences: last month's core argument and calls. Then what actually happened, and whether the argument held. Grade the predictions due (Hit/Miss/Partial) in one line each.
 
-## 2. Bottom line this month
-3–5 numbered points. Lead with what *changed*, not what is still true.
+## The story now
+3–6 paragraphs. The big stories in this sector as one connected argument: what is driving the industry, how it changed this month, and why. Political decisions sit inside the story where they bite (a ruling, an order, a sanction, a state law); they are not a separate list.
 
-## 3. Report card
-- Predictions graded this month (Hit/Miss/Partial/Void + one-line evidence).
-- Running hit rate.
-- Scenario check: which of last month's scenarios played out, and what that says about the thesis.
+## Winners and losers
+A short table: Company (ticker) | Why it wins or loses | What would break it.
+5–12 rows. At least a third should be non-obvious, 2nd/3rd-order names.
 
-## 4. The narrative now
-- Does the master thesis still hold, need amending, or get replaced? Say so explicitly and why.
-- Continue the acts: what this month added to the story.
+## What could come next
+2–3 scenarios in prose. Each says what triggers it, who wins and who loses, and the one or two signposts to watch.
 
-## 5. Story by story
-Group by sector (Policy, Semis, AI infra, Energy). Every ledger story appears:
-- Moved stories: Now / Means / Benefits / Pressured / Next (with tickers and mechanisms).
-- Unchanged stories: one line ("No material change; signpost X still pending").
-- Status changes highlighted (e.g. "AI-02: Escalating → Active").
-- New stories: why they passed the big-story test.
+## Calls for next month
+3–6 dated, checkable predictions.
 
-## 6. Political & policy developments this month
-A table: Date | Announcement | Actor | Stories affected | Market relevance.
-Include executive orders, tariffs, export controls, sanctions, Fed, regulators, Congress, state actions and foreign governments.
-
-## 7. How the stories connect
-3–6 bullet chains (A → B → C) for the most important cross-story links, emphasising 2nd/3rd-order effects.
-
-## 8. Company map
-Table: Company (ticker) | Stories | Order | Mechanism | What would break it.
-Carry forward last month's rows, update them, and add or remove with a reason.
-
-## 9. What could come next — scenarios (1–3 months)
-Base / Upside / Downside, each with rough probability, triggers, winners and losers.
-Compare the probabilities with last month's and explain any shift.
-
-## 10. Calendar (next ~6 weeks)
-
-## 11. New predictions (5–10, each with check-by date)
-
-## 12. Method & coverage gaps
+Sources: outlet + date, one line each
 ```
 
-## Flow rules
+## Before saving
 
-- Open with last month's own words, and close the loop on its questions.
-- When the thesis changes, say what evidence changed it. Don't silently swap narratives.
-- Prefer the weekly scans' verified facts over fresh assumptions. Re-verify anything a weekly scan marked "(secondary)".
-- Don't repeat the full history; refer to the act and story ID ("see AI-02").
+Re-read the draft as the user would. Cut any paragraph that only restates news. Cut any sentence about another sector that doesn't change this one. If the report could have been written by summarising headlines, it isn't done.

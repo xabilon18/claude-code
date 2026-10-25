@@ -38,7 +38,7 @@ The connector cannot edit a document in place. It can only create files and chan
 4. `update_file` on the old ledger: title `Story Ledger — v<N> (<YYYY-MM-DD>)`, `parentId` = Ledger History.
 5. `update_file` on the new file: title `Story Ledger — CURRENT`.
 6. Create the report doc the same way (Markdown → Doc):
-   - monthly: in Monthly Reports, titled `Sector Narrative — YYYY-MM`;
+   - monthly: in Monthly Reports, one doc per sector, titled `Energy Narrative — YYYY-MM`, `Semiconductor Narrative — YYYY-MM` and `AI Infrastructure Narrative — YYYY-MM`. To continue a sector, read its own previous report; the 2026-10 baseline covers all three;
    - weekly: in Weekly Scans, titled `Weekly Scan — YYYY-Www (MM-DD → MM-DD)`.
 7. Return the `viewUrl`s.
 
