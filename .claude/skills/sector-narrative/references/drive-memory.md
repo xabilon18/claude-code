@@ -9,7 +9,8 @@ All memory lives in the user's Google Drive (Google Drive connector, `mcp__Googl
 | `Weekly Scans` folder | `1r0e5_K1uY4VMy2hjT86sTCB8MWmyjn2X` |
 | `Ledger History` folder | `1DWYo9Pf80nEsQlG73ELfZK85hgXAr5ug` |
 | Ledger v1 (2026-10-25, archived in Ledger History) | `1ID7M6JzgD-aAX2s6eiOGvfZ-oFfv4ds6ryIexmUx4PA` |
-| Baseline report (2026-10) | `15CPr8iMFubeNEvUP3jvz0LhV8DNPfHsvyHxPTg6V6YI` |
+| Old-format baseline (2026-10, moved to Ledger History, reference only) | `15CPr8iMFubeNEvUP3jvz0LhV8DNPfHsvyHxPTg6V6YI` |
+| Energy / Semiconductor / AI Infrastructure Narrative — 2026-10 (opening chapters) | `1lMAOSKViUhevaPFUJ5_rXywS8xwArYy9FGy75fhtPms` / `1yhJJZvX7tyFFvNVysjZbw9cpft36bHKUvkeo5nFC4rg` / `1U4rizbrXVQDbdsqPyqpmaPLnYgcOQv4fA63eXKzILmU` |
 | `Skill Instructions — sector-narrative` (copy of this skill for scheduled tasks) | `1hIRONjsTkgd2s6p4E63BLzJnVYOuZOCar7KURTWgQPE` |
 
 The scheduled tasks run without the repository, so they read the skill from the `Skill Instructions` doc. Whenever any file in this skill changes, regenerate that doc and re-upload it:
@@ -46,7 +47,7 @@ The connector cannot edit a document in place. It can only create files and chan
 4. `update_file` on the old ledger: title `Story Ledger — v<N> (<YYYY-MM-DD>)`, `parentId` = Ledger History.
 5. `update_file` on the new file: title `Story Ledger — CURRENT`.
 6. Create the report doc the same way (Markdown → Doc):
-   - monthly: in Monthly Reports, one doc per sector, titled `Energy Narrative — YYYY-MM`, `Semiconductor Narrative — YYYY-MM` and `AI Infrastructure Narrative — YYYY-MM`. To continue a sector, read its own previous report; the 2026-10 baseline covers all three;
+   - monthly: in Monthly Reports, one doc per sector, titled `Energy Narrative — YYYY-MM`, `Semiconductor Narrative — YYYY-MM` and `AI Infrastructure Narrative — YYYY-MM`. To continue a sector, read its own previous report (the 2026-10 per-sector reports are the opening chapters);
    - weekly: in Weekly Scans, titled `Weekly Scan — YYYY-Www (MM-DD → MM-DD)`.
 7. Return the `viewUrl`s.
 
