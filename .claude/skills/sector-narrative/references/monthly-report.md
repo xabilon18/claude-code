@@ -1,6 +1,6 @@
 # Monthly report template
 
-One doc **per sector**, titled `Energy Narrative — YYYY-MM`, `Semiconductor Narrative — YYYY-MM`, `AI Infrastructure Narrative — YYYY-MM`, `Banks Narrative — YYYY-MM`, `Crypto Narrative — YYYY-MM` and `Healthcare Narrative — YYYY-MM`. Each is about 1,000–1,800 words of prose, and each continues that sector's previous report.
+One doc **per sector**, titled `Energy Narrative — YYYY-MM`, `Semiconductor Narrative — YYYY-MM`, `AI Infrastructure Narrative — YYYY-MM`, `Banks Narrative — YYYY-MM`, `Crypto Narrative — YYYY-MM`, `Healthcare Narrative — YYYY-MM` and `Industrials Narrative — YYYY-MM`. Each is about 1,000–1,800 words of prose, and each continues that sector's previous report.
 
 ## What the reader wants
 

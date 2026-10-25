@@ -34,6 +34,7 @@ ID prefixes:
 - `BANK-` banks (Ledger B)
 - `CRYP-` crypto (Ledger B)
 - `HLTH-` healthcare (Ledger B)
+- `IND-` industrials: aerospace & defense, space, autos/EVs/robotics, machinery, transport (Ledger B)
 
 POL-, SEMI-, AI- and ENRG- stories live in Ledger A. A Ledger B story may cite a Ledger A ID ("AI-02 in Ledger A").
 

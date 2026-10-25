@@ -22,6 +22,10 @@ Run each sweep every time.
    - "US banks news {period}" and "private credit news {period}"
    - "bitcoin crypto market news {period}" and "bitcoin ETF flows {period}"
    - "pharma biotech news {period}" and "health insurers hospitals news {period}"
+   - "defense contractors Pentagon budget news {period}" and "Golden Dome SpaceX news {period}"
+   - "Tesla robotaxi Optimus news {period}" and "US EV sales automakers tariffs {period}"
+   - "airlines jet fuel guidance {period}", "Boeing deliveries production rate {period}", "railroad merger STB {period}"
+   - "ISM manufacturing reshoring {period}" and "Caterpillar Deere outlook {period}"
 2. **Policy sweeps:**
    - "White House executive order {period} energy OR semiconductors OR AI"
    - "Commerce BIS export controls {period}"
@@ -35,11 +39,13 @@ Run each sweep every time.
    - "OCC FDIC Fed bank rule {period}" (capital, supervision, GENIUS Act rules)
    - "SEC CFTC crypto {period}" and "CLARITY Act {period}"
    - "CMS rule {period}", "FDA approval {period}", "drug pricing deal White House {period}"
+   - "defense appropriations continuing resolution {period}", "Pentagon contract award munitions {period}"
+   - "NHTSA autonomous vehicle rule {period}", "FAA Boeing {period}", "Section 232 autos steel {period}"
 3. **Story signposts:** for each Active/Escalating story, one search built from its Confirm/Break signposts.
 4. **Catalyst calendar:** results of every event dated within the window.
 5. **Predictions due:** one targeted search per prediction whose check-by date falls in the window.
 6. **Deals and capital markets.** Big M&A, IPOs and mega-financings reshape sectors, and thematic searches miss them. The baseline missed NextEra–Dominion and the SpaceX IPO this way.
-   - "largest acquisitions {sector} {period}" for semiconductors, AI, utilities/power, oil & gas, banks, biopharma and crypto
+   - "largest acquisitions {sector} {period}" for semiconductors, AI, utilities/power, oil & gas, banks, biopharma, crypto, defense/aerospace, autos and transport
    - "biggest IPO {period}"
    - "{sector} merger announced {period}"
    - "private credit data center financing {period}"
@@ -62,6 +68,7 @@ Run each sweep every time.
 | Banks | federalreserve.gov, OCC and FDIC press releases, bank earnings releases, FDIC Quarterly Banking Profile |
 | Crypto | SEC and CFTC releases, Congress.gov (CLARITY), ETF flow trackers (Farside, issuer sites), company 8-Ks |
 | Healthcare | CMS, FDA, HHS and White House fact sheets, KFF, company earnings releases |
+| Industrials | defense.gov/war.gov contract announcements, Congress.gov (NDAA, appropriations), CBO, Space Force/SDA releases, NHTSA, FAA, STB, ISM, airline and automaker earnings releases, SpaceX and Tesla filings |
 
 ## Company universe (starting set; extend as stories require)
 
@@ -125,5 +132,13 @@ Run each sweep every time.
 - Hospitals: HCA, Tenet (THC), Community Health (CYH)
 - Tools and manufacturing: Thermo Fisher (TMO), Lonza (LONN.SW), Samsung Biologics (207940.KS)
 - Cash-pay channels: Hims & Hers (HIMS)
+
+**Industrials:**
+- Defense: Lockheed Martin (LMT), RTX, Northrop (NOC), General Dynamics (GD), L3Harris (LHX), AeroVironment (AVAV), Kratos (KTOS), Palantir (PLTR); private: Anduril
+- Aerospace: Boeing (BA), GE Aerospace (GE), Howmet (HWM)
+- Space: SpaceX (SPCX), Viasat (VSAT), EchoStar (SATS)
+- Autos, EVs & robotics: Tesla (TSLA), GM, Ford (F), Toyota (TM), Rivian (RIVN), Lucid (LCID), Aptiv (APTV), BorgWarner (BWA)
+- Machinery & materials: Caterpillar (CAT), Deere (DE), Nucor (NUE), Steel Dynamics (STLD)
+- Transport: Union Pacific (UNP), Norfolk Southern (NSC), CSX; Delta (DAL), United (UAL), American (AAL), Southwest (LUV), JetBlue (JBLU)
 
 Verify a ticker before first use in a report if it hasn't appeared before; companies get renamed and merged.

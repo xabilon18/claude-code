@@ -12,6 +12,7 @@ All memory lives in the user's Google Drive (Google Drive connector, `mcp__Googl
 | Old-format baseline (2026-10, moved to Ledger History, reference only) | `15CPr8iMFubeNEvUP3jvz0LhV8DNPfHsvyHxPTg6V6YI` |
 | Energy / Semiconductor / AI Infrastructure Narrative — 2026-10 (opening chapters) | `1lMAOSKViUhevaPFUJ5_rXywS8xwArYy9FGy75fhtPms` / `1yhJJZvX7tyFFvNVysjZbw9cpft36bHKUvkeo5nFC4rg` / `1U4rizbrXVQDbdsqPyqpmaPLnYgcOQv4fA63eXKzILmU` |
 | Banks / Crypto / Healthcare Narrative — 2026-10 (opening chapters) | `16j_mc2BmMUUBgJvATZP8V-tzKMZ_xir-ezPIg3GooOI` / `1Q0UbdzXJdGmySUD-oSJ04oMLFFQemoQ2JZfV5O_SrmM` / `1Vf2vK9-bS2coOuAoQ4vpMgP_uBj2wAW6fuBk_3xQD5Q` |
+| Industrials Narrative — 2026-10 (opening chapter) | `1sl3Uf37ca4Sa-L3w2BrjQ2jrUaWk1I_LrtVGg1OBqTM` |
 | `Skill Instructions — sector-narrative` (copy of this skill for scheduled tasks) | find by title in the root folder |
 
 The scheduled tasks run without the repository, so they read the skill from the `Skill Instructions` doc. Whenever any file in this skill changes, regenerate that doc and re-upload it:
@@ -23,7 +24,7 @@ Write placeholders as `{period}`, not `<period>`. Docs import deletes unknown `<
 
 There are two ledgers, both in the root folder:
 - **Ledger A** `Story Ledger — CURRENT`: Semis, AI infrastructure, Energy and cross-cutting policy (POL-).
-- **Ledger B** `Story Ledger B — CURRENT`: Banks, Crypto, Healthcare.
+- **Ledger B** `Story Ledger B — CURRENT`: Banks, Crypto, Healthcare, Industrials.
 
 A ledger's file ID changes with every version. Always **find it by title**; never hard-code the latest ID. Everything below applies to each ledger separately. For Ledger B, use `Story Ledger B` in place of `Story Ledger` in every title.
 
@@ -52,7 +53,7 @@ The connector cannot edit a document in place. It can only create files and chan
 4. `update_file` on the old ledger: title `Story Ledger — v<N> (<YYYY-MM-DD>)`, `parentId` = Ledger History.
 5. `update_file` on the new file: title `Story Ledger — CURRENT`.
 6. Create the report doc the same way (Markdown → Doc):
-   - monthly: in Monthly Reports, one doc per sector, titled `Energy Narrative — YYYY-MM`, `Semiconductor Narrative — YYYY-MM`, `AI Infrastructure Narrative — YYYY-MM`, `Banks Narrative — YYYY-MM`, `Crypto Narrative — YYYY-MM` and `Healthcare Narrative — YYYY-MM`. To continue a sector, read its own previous report (the 2026-10 per-sector reports are the opening chapters);
+   - monthly: in Monthly Reports, one doc per sector, titled `Energy Narrative — YYYY-MM`, `Semiconductor Narrative — YYYY-MM`, `AI Infrastructure Narrative — YYYY-MM`, `Banks Narrative — YYYY-MM`, `Crypto Narrative — YYYY-MM`, `Healthcare Narrative — YYYY-MM` and `Industrials Narrative — YYYY-MM`. To continue a sector, read its own previous report (the 2026-10 per-sector reports are the opening chapters);
    - weekly: in Weekly Scans, titled `Weekly Scan — YYYY-Www (MM-DD → MM-DD)`.
 7. Return the `viewUrl`s.
 

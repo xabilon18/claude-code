@@ -1,18 +1,18 @@
 ---
 name: sector-narrative
-description: Track the big stories in semiconductors, AI/data-center infrastructure, energy, banks, crypto and healthcare (plus the political and policy announcements that move them), keep persistent Story Ledgers in Google Drive so no big story is ever forgotten, and write a weekly light scan or monthly per-sector narrative reports that name the companies that benefit or get hurt and what could come next. Use when asked for the weekly sector scan, the monthly sector narrative, to update the story ledger, or to rebuild the baseline.
+description: Track the big stories in semiconductors, AI/data-center infrastructure, energy, banks, crypto, healthcare and industrials (plus the political and policy announcements that move them), keep persistent Story Ledgers in Google Drive so no big story is ever forgotten, and write a weekly light scan or monthly per-sector narrative reports that name the companies that benefit or get hurt and what could come next. Use when asked for the weekly sector scan, the monthly sector narrative, to update the story ledger, or to rebuild the baseline.
 ---
 
 # Sector Narrative
 
-The goal is a narrative that remembers. Every run starts from the two **Story Ledgers** in Google Drive (A: Semis, AI infrastructure, Energy, cross-cutting policy; B: Banks, Crypto, Healthcare), adds what changed, and saves a new version. Monthly reports open from last month's report and grade last month's predictions.
+The goal is a narrative that remembers. Every run starts from the two **Story Ledgers** in Google Drive (A: Semis, AI infrastructure, Energy, cross-cutting policy; B: Banks, Crypto, Healthcare, Industrials), adds what changed, and saves a new version. Monthly reports open from last month's report and grade last month's predictions.
 
 ## Modes
 
 | Invocation | What it does | Output |
 |---|---|---|
 | `weekly` | Scans the past 7 days, updates the ledger, and writes a short per-sector note on what changed and why it matters | `Weekly Scan — YYYY-Www` doc + new ledger version |
-| `monthly` | One narrative report per sector (Energy, Semiconductors, AI Infrastructure, Banks, Crypto, Healthcare), each continuing that sector's previous report | Six `<Sector> Narrative — YYYY-MM` docs + new versions of both ledgers |
+| `monthly` | One narrative report per sector (Energy, Semiconductors, AI Infrastructure, Banks, Crypto, Healthcare, Industrials), each continuing that sector's previous report | Seven `<Sector> Narrative — YYYY-MM` docs + new versions of both ledgers |
 | `sector <name>` | An on-demand narrative for one sector only, in the monthly format | A reply in chat (offer to save it as a doc) |
 | `baseline` | Rebuilds the ledger from scratch over a stated window (default: since 2025-01-20). Only when the user asks, because it replaces the narrative thread | Baseline report + ledger v1 of a new series |
 | `story <ID or topic>` | Deep-dive on one story, ad hoc | Reply in chat (and a ledger update if facts changed) |
@@ -89,6 +89,7 @@ Core sectors:
 - **Banks:** large and regional banks, capital rules and supervision, bank M&A, private credit exposure, deposits vs stablecoins.
 - **Crypto:** bitcoin and ETF flows, crypto legislation and regulators, treasury companies, miners (including their AI pivot), exchanges and stablecoin issuers.
 - **Healthcare:** drug pricing and pharma tariffs, obesity drugs, pharma M&A and patent cliffs, insurers (Medicare Advantage, ACA), hospitals and Medicaid, the FDA, China biotech rules.
+- **Industrials** (one report): aerospace & defense (budgets, munitions, Golden Dome, SpaceX and the space economy, Boeing); autos, EVs & robotics (Tesla, robotaxi and Optimus, the Detroit three, auto tariffs); machinery & reshoring (factory cycle, steel tariffs); transport (airlines, rail). SpaceX's AI side (xAI) and Tesla's chip plans stay in Ledger A (AI-, SEMI-) and are cross-referenced.
 - **Cross-cutting policy:** tariffs, export controls, sanctions, Fed/rates, US–China, elections, state energy/data-center law.
 
 The company universe and source list are in `references/research-playbook.md`. Expand coverage only if the user asks; depth beats breadth.
