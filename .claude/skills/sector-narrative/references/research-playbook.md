@@ -32,6 +32,12 @@ Run each sweep every time.
 3. **Story signposts:** for each Active/Escalating story, one search built from its Confirm/Break signposts.
 4. **Catalyst calendar:** results of every event dated within the window.
 5. **Predictions due:** one targeted search per prediction whose check-by date falls in the window.
+6. **Deals and capital markets.** Big M&A, IPOs and mega-financings reshape sectors, and thematic searches miss them. The baseline missed NextEra–Dominion and the SpaceX IPO this way.
+   - "largest acquisitions <sector> <period>" for semiconductors, AI, utilities/power and oil & gas
+   - "biggest IPO <period>"
+   - "<sector> merger announced <period>"
+   - "private credit data center financing <period>"
+   - Then check the status of every deal already in the ledger (votes, regulatory orders, closings).
 
 ## Primary sources (prefer these)
 

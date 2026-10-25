@@ -8,7 +8,7 @@ All memory lives in the user's Google Drive (Google Drive connector, `mcp__Googl
 | `Monthly Reports` folder | `1clhRM53SrPEkU5pTVoAxgoGVzHXgmefx` |
 | `Weekly Scans` folder | `1r0e5_K1uY4VMy2hjT86sTCB8MWmyjn2X` |
 | `Ledger History` folder | `1DWYo9Pf80nEsQlG73ELfZK85hgXAr5ug` |
-| Ledger v1 (2026-10-25, now superseded once v2 exists) | `1ID7M6JzgD-aAX2s6eiOGvfZ-oFfv4ds6ryIexmUx4PA` |
+| Ledger v1 (2026-10-25, archived in Ledger History) | `1ID7M6JzgD-aAX2s6eiOGvfZ-oFfv4ds6ryIexmUx4PA` |
 | Baseline report (2026-10) | `15CPr8iMFubeNEvUP3jvz0LhV8DNPfHsvyHxPTg6V6YI` |
 
 The ledger's file ID changes with every version. Always **find it by title**; never hard-code the latest ID.

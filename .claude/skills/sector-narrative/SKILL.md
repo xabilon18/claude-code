@@ -25,7 +25,7 @@ If no mode is given, ask which mode. A scheduled run always names its mode.
 3. **Every story carries its politics.** Each update names the policy lever involved: executive orders, tariffs (Section 232/122/301), export controls (BIS), sanctions (OFAC), Fed, FERC/NRC/EPA, Congress, state legislatures, foreign governments. Political announcements are first-class developments, not background.
 4. **Name companies with a mechanism.** Every company mention gives its ticker, its order (1st/2nd/3rd), *why* the story moves its economics, and *what would break the thesis*. No ticker lists without reasons.
 5. **Separate evidence from inference.**
-   - Tag facts **[V]** (verified this run, with source and date) or **[B]** (background knowledge).
+   - Tag facts **[V]** (verified this run, with source and date) or **[B]** (background knowledge). Tag ticker-exposure lists **[map]**: they are analytical judgements, not reported facts.
    - Mark single-source or aggregator figures "(secondary)" or "(single source)".
    - Label forward-looking statements as hypotheses or scenarios.
    - Never invent numbers, dates or quotes. Leave a gap and list it under "Coverage gaps".
@@ -41,6 +41,7 @@ If no mode is given, ask which mode. A scheduled run always names its mode.
    - the catalyst calendar for the window;
    - open predictions due in the window;
    - the policy sources sweep;
+   - the deals and capital-markets sweep (M&A, IPOs, mega-financings);
    - a broad "what's new" sweep per sector to catch stories the ledger doesn't have yet.
 3. **Research.**
    - Weekly: about 12–20 searches.
