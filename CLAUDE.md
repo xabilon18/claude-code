@@ -1,5 +1,11 @@
 # Read this first
 
+**Time zone: SAST (Africa/Johannesburg, UTC+2, no daylight saving).** Every
+time you give the user is in SAST (user, 2026-10-28: "Please always use my
+time zone"). GitHub, Actions logs, R2 and cron expressions are in UTC: add 2
+hours before you say a time. Quote UTC only where it is the code's own value
+(a cron line, a stored timestamp), and label it UTC when you do.
+
 This repository is a fork of Claude Code. It is NOT the user's app.
 
 The user's app is **SwingPulse**: `xabilon18-ctrl/SwingPulse` (charts,
